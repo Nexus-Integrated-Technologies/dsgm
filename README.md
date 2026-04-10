@@ -31,7 +31,7 @@ This repository serves as the **canonical source of record** for the Digital Sus
 **Digital Sustainable Growth Model (DSGM) v1.0**  
 **Author:** `Billy Coleman III (prodbybuddha.world.id)`
 
-**Repository:** https://github.com/ProdByBuddha/dsgm
+**Repository:** https://github.com/nexus-integrated-technologies/dsgm
 
 This repository contains the **canonical source artifacts** for the Digital
 Sustainable Growth Model. The model is published in two formally recognized
