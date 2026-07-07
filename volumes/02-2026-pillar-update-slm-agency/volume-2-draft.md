@@ -1,6 +1,7 @@
 # DSGM Volume 2 Draft: 2026 Pillar Update and SLM Agency Direction
 
-Status: public draft. Not yet a canonical PDF or timestamped edition.
+Status: review-ready public draft. Not yet a canonical PDF or timestamped
+edition.
 
 Author: Billy Coleman III (`prodbybuddha.world.id`)
 
@@ -85,6 +86,11 @@ such as Microsoft Elevate for Changemakers while describing large-scale support
 for nonprofit organizations. Google.org launched a $30 million AI for Government
 Innovation challenge for nonprofits, social enterprises, and academic
 institutions partnering with governments.
+
+The source mapping for these claims is maintained in
+[pillar-evidence-ledger.md](pillar-evidence-ledger.md). This manuscript treats
+that ledger as the evidence index rather than repeating every source URL inside
+the main argument.
 
 These programs are not identical, and many may produce real public benefit. The
 important DSGM point is structural: major AI providers are moving from selling
@@ -353,10 +359,48 @@ An AI adoption path reduces institutional agency when it:
 - or treats public-sector and nonprofit adoption primarily as a market-entry
   channel.
 
-## 9. Research Agenda
+## 9. What Institutions Should Do Now
 
-Volume 2 should remain a draft until the following questions are developed
-further:
+The practical response is not to pause all AI adoption. It is to adopt from a
+position of institutional strength.
+
+Before entering an AI fellowship, public-sector pilot, vendor rollout, grant
+program, or enterprise deployment, institutions should complete five actions.
+
+**1. Separate capability from dependency.** Identify what the AI system will
+make possible, then identify which parts of that capability remain inside the
+institution after the provider, fellow, grant, or credit period ends.
+
+**2. Require an exit package.** Every AI project should produce portable
+prompts, workflow descriptions, agent configurations, documentation, logs,
+training materials, and data export paths. If the project cannot be handed off,
+it is not institutional capacity. It is rented capacity.
+
+**3. Classify work by model tier.** Do not default every task to a frontier
+model. Separate routine, bounded, document-heavy, and internal workflows from
+hard reasoning, high-risk analysis, and specialist tasks. Use private SLM
+agency for the first category where feasible, and route to frontier models only
+when there is a clear benefit.
+
+**4. Measure public value before savings.** Productivity gains should not be
+measured only as headcount reduction or faster throughput. For public-interest
+institutions, measure whether AI improves access, quality, staff capacity,
+service continuity, and resident, client, or customer outcomes.
+
+**5. Preserve bargaining power.** Avoid agreements that lock institutional
+memory, data, workflows, or evaluation records into one vendor. Require export,
+auditability, model-routing transparency, deletion rights, and clear renewal
+pricing before the pilot begins.
+
+These actions convert the Volume 1 pillars into institutional practice. Pillar
+A becomes accountable service ownership. Pillar B becomes procurement-level
+value capture and routing discipline. Pillar C becomes reinvestment of AI
+productivity into durable public or mission capacity.
+
+## 10. Post-Publication Research Agenda
+
+The following questions should shape the next research pass after this public
+draft is reviewed:
 
 - What contractual language best preserves data portability and workflow exit
   rights for nonprofits and municipalities?

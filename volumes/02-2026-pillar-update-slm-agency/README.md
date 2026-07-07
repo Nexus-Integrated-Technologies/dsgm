@@ -1,6 +1,6 @@
 # DSGM Volume 2 Draft: 2026 Pillar Update and SLM Agency Direction
 
-Status: public draft. Not yet a timestamped canonical edition.
+Status: review-ready public draft. Not yet a timestamped canonical edition.
 
 Volume 2 updates the Digital Sustainable Growth Model (DSGM) against the
 institutional AI landscape visible in 2026. It does not replace Volume 1. Volume
@@ -57,6 +57,13 @@ enough for the work. Frontier models can still be used for escalation, but they
 should not become the default owner of institutional memory, workflow, or
 decision capacity.
 
+## Publication Posture
+
+This package is complete as a Markdown draft for public review. It is not yet
+the canonical Volume 2 release. A final PDF, hashes, and OpenTimestamps proofs
+should be produced only after editorial review confirms the framing, evidence,
+and source language.
+
 ## Files
 
 - [volume-2-draft.md](volume-2-draft.md) - the main manuscript.
@@ -74,6 +81,8 @@ decision capacity.
    government contract, grant-funded AI program, or enterprise rollout.
 4. Treat the SLM agency section as the strategic steering recommendation, not
    as a rejection of frontier models.
+5. Use the "What Institutions Should Do Now" section as the immediate action
+   layer before any canonical PDF release.
 
 ## Current Position
 

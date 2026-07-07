@@ -1,6 +1,6 @@
 # Pillar Evidence Ledger
 
-Status: public draft support ledger for DSGM Volume 2.
+Status: review-ready public draft support ledger for DSGM Volume 2.
 
 This ledger maps current evidence to the three pillars of Volume 1:
 
@@ -81,3 +81,16 @@ structural transition: AI firms and platforms are moving into the operating
 layer of institutions. DSGM Volume 2 argues that institutions should accept AI
 support only with governance, portability, local capacity, and public value
 preserved.
+
+## Claim Coverage Matrix
+
+| Manuscript claim | Evidence coverage | Status |
+| --- | --- | --- |
+| AI is moving from standalone tools into institutional operating infrastructure. | Claude Corps, OpenAI People-First AI Fund, ChatGPT Gov, OpenAI for Government, Microsoft Elevate for Changemakers, Google.org AI for Government Innovation. | Covered by public institutional sources. |
+| The practical precursor to Artificial Humanity is operational agency. | MCP, OpenAI Agents SDK, LangGraph, Microsoft Agent Framework, first-party agency runtime docs. | Covered by public technical sources plus first-party implementation evidence. |
+| The harness around the model is now a primary control surface. | LangGraph, Microsoft Agent Framework, OpenAI Agents SDK, agency capability adoption ledger, agency provider routing roadmap. | Covered. |
+| Compute-only value capture is insufficient as models become smaller, cheaper, and more distributed. | Volume 1 efficiency-paradox logic, Ollama, llama.cpp, local tool-calling and OpenAI-compatible serving patterns, agency provider routing roadmap. | Covered as analysis from Volume 1 plus current SLM/local-runtime evidence. |
+| Institutional AI adoption should include public-benefit procurement and reinvestment rules. | Public institutional AI programs plus DSGM Pillar B/Pillar C logic. | Covered as normative DSGM analysis, not as a claim that vendors currently require it. |
+| Private SLM agency is the recommended steering direction for routine institutional work. | Ollama, llama.cpp, MCP, agency runtime/provider-routing docs, institutional checklist. | Covered as first-party recommendation supported by current local-agent infrastructure. |
+| Frontier models remain useful but should be routed intentionally. | Agency provider routing roadmap and public agent framework docs. | Covered as architecture/policy recommendation. |
+| Named vendor programs are not asserted to be malicious or secretly extractive. | Claims Not Made section and source framing. | Explicitly bounded. |
