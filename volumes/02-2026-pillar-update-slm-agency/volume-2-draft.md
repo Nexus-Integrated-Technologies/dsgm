@@ -3,6 +3,9 @@
 Status: review-ready public draft. Not yet a canonical PDF or timestamped
 edition.
 
+Note: this file is the short precursor draft. The expanded dissertation
+manuscript is [volume-2-dissertation.md](volume-2-dissertation.md).
+
 Author: Billy Coleman III (`prodbybuddha.world.id`)
 
 Repository: <https://github.com/Nexus-Integrated-Technologies/dsgm>
