@@ -1,6 +1,7 @@
-# DSGM Volume 2 Draft: 2026 Pillar Update and SLM Agency Direction
+# DSGM Volume 2: The Institutional Agency Paradigm
 
-Status: review-ready public draft. Not yet a timestamped canonical edition.
+Status: review-ready Markdown dissertation manuscript. Not yet a timestamped
+canonical PDF edition.
 
 Volume 2 updates the Digital Sustainable Growth Model (DSGM) against the
 institutional AI landscape visible in 2026. It does not replace Volume 1. Volume
@@ -66,14 +67,16 @@ public capacity or a brittle dependency.
 
 ## Publication Posture
 
-This package is complete as a Markdown draft for public review. It is not yet
-the canonical Volume 2 release. A final PDF, hashes, and OpenTimestamps proofs
-should be produced only after editorial review confirms the framing, evidence,
-and source language.
+This package is complete as a Markdown dissertation manuscript for public
+review. It is not yet the canonical Volume 2 release. A final PDF, hashes, and
+OpenTimestamps proofs should be produced only after editorial review confirms
+the framing, evidence, and source language.
 
 ## Files
 
-- [volume-2-draft.md](volume-2-draft.md) - the main manuscript.
+- [volume-2-dissertation.md](volume-2-dissertation.md) - the main Volume 2
+  dissertation manuscript.
+- [volume-2-draft.md](volume-2-draft.md) - the earlier short draft precursor.
 - [pillar-evidence-ledger.md](pillar-evidence-ledger.md) - evidence mapped to
   the three DSGM pillars.
 - [institutional-procurement-checklist.md](institutional-procurement-checklist.md)
@@ -82,14 +85,14 @@ and source language.
 
 ## Reading Path
 
-1. Read the executive thesis in `volume-2-draft.md`.
+1. Read the full manuscript in `volume-2-dissertation.md`.
 2. Use the evidence ledger to see how each claim maps back to Volume 1.
 3. Use the procurement checklist before entering a pilot, fellowship,
    government contract, grant-funded AI program, or enterprise rollout.
 4. Treat the SLM agency section as the strategic steering recommendation, not
    as a rejection of frontier models.
-5. Use the "What Institutions Should Do Now" section as the immediate action
-   layer before any canonical PDF release.
+5. Use the appendices as the immediate action layer before any canonical PDF
+   release.
 
 ## Current Position
 
