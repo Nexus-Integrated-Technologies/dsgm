@@ -54,6 +54,8 @@ this adoption path increase or reduce institutional agency?
 - What tools can the AI system call?
 - Can it read files, write files, send messages, browse the web, update
   databases, make purchases, or trigger public actions?
+- Does every AI agent have its own identity, or does it borrow a human or
+  shared service account?
 - Which actions require human approval?
 - Are permissions scoped by role, department, project, and risk level?
 - Are tool calls logged in a way that staff can review?
@@ -70,7 +72,28 @@ this adoption path increase or reduce institutional agency?
 - Does the vendor provide incident reports for system failures, data exposure,
   or unsafe behavior?
 
-## 7. Cost And Value Capture
+## 7. Security And Supply Chain
+
+- What model files, APIs, packages, containers, connectors, plugins, MCP
+  servers, datasets, and retrieval indexes are part of the system?
+- Are models, dependencies, and connectors pinned, reviewed, and provenance
+  tracked?
+- Can the vendor provide a software bill of materials or equivalent dependency
+  inventory for the AI workflow?
+- How are training, fine-tuning, embeddings, retrieval sources, memory stores,
+  and feedback protected against poisoning or unauthorized modification?
+- How does the system handle prompt injection or indirect prompt injection from
+  emails, web pages, PDFs, tickets, chats, transcripts, images, or records?
+- Are code execution, shell, browser, file, payment, messaging, and database
+  tools sandboxed?
+- Can the institution revoke tokens, disable tools, rotate credentials, freeze
+  workflows, and preserve evidence during an incident?
+- Are logs monitored for unusual tool calls, data access, privilege escalation,
+  model-routing changes, or abnormal spend?
+- What security testing has been performed against prompt injection, data
+  leakage, supply-chain compromise, and excessive agency?
+
+## 8. Cost And Value Capture
 
 - What is free now, and what becomes paid later?
 - Are model credits, discounted seats, fellow labor, or cloud grants temporary?
@@ -81,7 +104,7 @@ this adoption path increase or reduce institutional agency?
 - Does the contract prevent the vendor from converting public or nonprofit
   adoption into permanent dependency?
 
-## 8. Public Benefit And Governance
+## 9. Public Benefit And Governance
 
 - For public-sector or nonprofit work, what public benefit is created beyond
   adoption of the vendor's tool?
@@ -92,7 +115,7 @@ this adoption path increase or reduce institutional agency?
 - Are equity and language-access impacts tested?
 - Does the institution retain enough knowledge to govern the system itself?
 
-## 9. Private SLM Agency Assessment
+## 10. Private SLM Agency Assessment
 
 Before defaulting to a hosted frontier model, ask whether the workflow can run
 through a private small-language-model agency stack.
@@ -106,8 +129,10 @@ through a private small-language-model agency stack.
 - Can the system escalate only difficult cases to a frontier model?
 - Can the institution keep prompts, workflows, logs, and artifacts locally?
 - Can the workflow run during a vendor outage or contract transition?
+- Can local models and connectors be updated securely without silently changing
+  behavior, permissions, or provenance?
 
-## 10. Exit Plan
+## 11. Exit Plan
 
 No AI pilot should begin without an exit plan.
 
@@ -119,6 +144,8 @@ No AI pilot should begin without an exit plan.
 - What local or alternate provider can take over?
 - How long would migration take?
 - What is the cost of leaving?
+- How will credentials, tokens, logs, memory, embeddings, and retained data be
+  revoked, preserved, migrated, or destroyed?
 
 ## Red Flags
 
@@ -126,6 +153,9 @@ No AI pilot should begin without an exit plan.
 - No export path for workflows, memory, prompts, or logs.
 - Broad data-use rights that allow vendor model improvement by default.
 - AI agents with tool access but no approval policy.
+- AI agents using shared credentials, broad permissions, or unreviewed tools.
+- No model, data, connector, plugin, or dependency provenance.
+- No plan for prompt injection, retrieval poisoning, or data exfiltration.
 - No clear owner for errors or harms.
 - Staff are trained only to use a vendor interface, not to understand the
   workflow.
@@ -144,6 +174,8 @@ following:
 - We know who is accountable for its outputs.
 - We can export our data and workflows.
 - We can review logs and evidence.
+- We know the system's supply chain and security controls.
+- We can disable agent tools and preserve evidence during an incident.
 - We know the cost after the initial program ends.
 - We have a human review process for high-risk work.
 - We have considered private SLM agency for routine tasks.

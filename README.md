@@ -38,7 +38,7 @@ municipalities, SMEs, enterprises, and government through service programs,
 agent platforms, workflow products, and public-sector partnerships. It also
 argues that open-source, private, small-language-model powered agency is the
 preferred direction for institutions that need local control, portability,
-auditability, and data sovereignty.
+auditability, security resilience, and data sovereignty.
 
 Volume 2 is intentionally published as a Markdown draft first. The v1.0 PDF
 editions and OpenTimestamps proofs remain immutable canonical artifacts; any
