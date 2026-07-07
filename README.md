@@ -25,6 +25,30 @@ DSGM is intended for policymakers, economists, technologists, researchers, and i
 
 This repository serves as the **canonical source of record** for the Digital Sustainable Growth Model, including formally timestamped editions, cryptographic proofs of authorship, and supporting artifacts.
 
+## Current Draft: Volume 2
+
+Volume 1 established the DSGM framework: Artificial Humanity as a legal-economic
+entity, value capture from autonomous cognitive production, and the Global
+Productivity Fund / Automation Dividend as public-benefit infrastructure.
+
+The current review-ready draft extension, **Volume 2: 2026 Pillar Update and
+SLM Agency Direction**, updates those pillars against the present institutional
+AI landscape. It argues that AI is now being embedded into nonprofits,
+municipalities, SMEs, enterprises, and government through service programs,
+agent platforms, workflow products, and public-sector partnerships. It also
+argues that open-source, private, small-language-model powered agency is the
+preferred direction for institutions that need local control, portability,
+auditability, and data sovereignty.
+
+Volume 2 is intentionally published as a Markdown draft first. The v1.0 PDF
+editions and OpenTimestamps proofs remain immutable canonical artifacts; any
+future Volume 2 PDF and timestamp proofs should be produced only after review.
+
+- [Volume 2 executive summary](volumes/02-2026-pillar-update-slm-agency/README.md)
+- [Volume 2 draft manuscript](volumes/02-2026-pillar-update-slm-agency/volume-2-draft.md)
+- [Pillar evidence ledger](volumes/02-2026-pillar-update-slm-agency/pillar-evidence-ledger.md)
+- [Institutional procurement checklist](volumes/02-2026-pillar-update-slm-agency/institutional-procurement-checklist.md)
+
 
 ## 📌 Canonical Authorship & Provenance
 
@@ -123,4 +147,3 @@ terminology, and documentation in this repository are authored by
    - Interested commercial parties must contact the author to negotiate licensing terms, which may include royalties, equity, or other financial arrangements.  
 
 By using this work, you agree to the terms of this dual-license.
-
