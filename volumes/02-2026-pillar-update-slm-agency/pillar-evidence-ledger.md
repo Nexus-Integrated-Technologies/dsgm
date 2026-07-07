@@ -40,6 +40,19 @@ direction that Volume 2 recommends.
 | [Ollama streaming tool calling](https://ollama.com/blog/streaming-tool) | Ollama supports streaming responses with tool calling and lists multiple tool-calling model families. | Pillar A | Local agent UX and tool use are improving beyond static chat. |
 | [llama.cpp server README](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md) | llama.cpp server supports OpenAI-style function calling and OpenAI-compatible local serving patterns. | Pillar A, Pillar B | Institutions can run local or private inference behind familiar API surfaces, reducing default dependence on hosted frontier APIs. |
 
+## Public AI Security And Resilience Evidence
+
+| Evidence | What it shows | DSGM pillar mapping | Institutional implication |
+| --- | --- | --- | --- |
+| [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | NIST frames AI risk management through governance, mapping, measurement, and management across organizational contexts. | Pillar A, Pillar C | AI adoption needs formal risk ownership and ongoing management, not only model selection. |
+| [NIST AI RMF Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) | NIST identifies generative AI risks including information security, data privacy, information integrity, and incident response. | Pillar A, Pillar C | Institutions should evaluate generative AI systems as socio-technical risk systems before deployment. |
+| [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) | OWASP lists application risks such as prompt injection, sensitive information disclosure, supply-chain vulnerabilities, data/model poisoning, improper output handling, and excessive agency. | Pillar A, Pillar B | AI agents need least privilege, tool boundaries, input/output controls, and supply-chain review. |
+| [MITRE ATLAS](https://atlas.mitre.org/) | MITRE ATLAS is a knowledge base of adversary tactics and techniques against AI-enabled systems based on real-world observations. | Pillar A | Institutions should threat-model AI systems as attackable infrastructure, not neutral productivity tools. |
+| [CISA AI Cybersecurity Collaboration Playbook](https://www.cisa.gov/resources-tools/resources/ai-cybersecurity-collaboration-playbook) | CISA provides guidance for AI providers, developers, and adopters to share AI-related cybersecurity information. | Pillar A, Pillar C | AI incidents and vulnerabilities need reporting paths, collaboration, and recovery processes. |
+| [CISA and UK NCSC secure AI system development guidelines](https://www.cisa.gov/news-events/alerts/2023/11/26/cisa-and-uk-ncsc-unveil-joint-guidelines-secure-ai-system-development) | CISA and partners recommend secure-by-design AI development across design, development, deployment, and operations. | Pillar A, Pillar B | Procurement should require secure development, deployment, monitoring, and supply-chain practices. |
+| [NSA/CISA/FBI AI data security guidance](https://www.cisa.gov/news-events/alerts/2025/05/22/new-best-practices-guide-securing-ai-data-released) | Joint guidance highlights data security across the AI lifecycle, including the data supply chain and protection against unauthorized modification. | Pillar A, Pillar B | Data provenance, integrity, and protection are prerequisites for trustworthy AI outputs. |
+| [UK NCSC: Prompt injection is not SQL injection](https://www.ncsc.gov.uk/blog-post/prompt-injection-is-not-sql-injection) | NCSC warns that prompt injection should be treated as an "inherently confusable" deputy problem where risk and impact must be reduced rather than assumed fully fixable. | Pillar A | Institutions should limit agent power, isolate untrusted content, and avoid use cases that cannot tolerate residual prompt-injection risk. |
+
 ## First-Party Implementation Evidence
 
 | Evidence | What it shows | DSGM pillar mapping | Institutional implication |
@@ -56,7 +69,8 @@ direction that Volume 2 recommends.
 Current evidence supports the AH thesis by showing that AI is becoming
 operational agency: persistent systems connected to tools, data, workflows,
 approval paths, and institutional tasks. The near-term governance object is not
-machine personhood. It is accountable AI service ownership.
+machine personhood. It is accountable AI service ownership, including security
+ownership for tools, data, identities, logs, and incident response.
 
 ### Pillar B: Value Capture
 
@@ -64,14 +78,17 @@ Current evidence stresses the original compute-tax framing. Value is captured
 through subscriptions, credits, service contracts, cloud spend, workflow
 dependency, model routing, and data gravity. Compute and energy levies remain
 part of the answer, but public-benefit procurement and service/output capture
-must be added.
+must be added. Security also affects value capture because supply-chain risk,
+opaque routing, compromised data, and unmanaged tool access can externalize
+costs onto public institutions while private providers capture the upside.
 
 ### Pillar C: Global Productivity Fund And Automation Dividend
 
 Current evidence supports the public-benefit logic by showing major AI
 deployment programs aimed at nonprofits and government. Those programs should
 be evaluated not only by adoption numbers, but by what public or institutional
-capacity remains after the program ends.
+capacity remains after the program ends and whether that capacity can be run
+securely.
 
 ## Claims Not Made
 
@@ -93,4 +110,6 @@ preserved.
 | Institutional AI adoption should include public-benefit procurement and reinvestment rules. | Public institutional AI programs plus DSGM Pillar B/Pillar C logic. | Covered as normative DSGM analysis, not as a claim that vendors currently require it. |
 | Private SLM agency is the recommended steering direction for routine institutional work. | Ollama, llama.cpp, MCP, agency runtime/provider-routing docs, institutional checklist. | Covered as first-party recommendation supported by current local-agent infrastructure. |
 | Frontier models remain useful but should be routed intentionally. | Agency provider routing roadmap and public agent framework docs. | Covered as architecture/policy recommendation. |
+| AI supply-chain attacks, prompt injection, excessive agency, data leakage, and loss-of-control failures are institutional hazards. | NIST AI RMF/GAI Profile, OWASP LLM Top 10, MITRE ATLAS, CISA AI cybersecurity playbook, CISA/NCSC secure AI guidelines, NSA/CISA/FBI AI data-security guidance, UK NCSC prompt-injection guidance. | Covered by public security sources. |
+| "AI takeover" should be translated into operational loss of control for institutional planning. | OWASP excessive agency, NCSC prompt-injection framing, NIST risk-management framing, first-party harness/evidence controls. | Covered as risk analysis, not as a claim of machine intent. |
 | Named vendor programs are not asserted to be malicious or secretly extractive. | Claims Not Made section and source framing. | Explicitly bounded. |

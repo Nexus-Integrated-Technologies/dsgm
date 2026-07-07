@@ -48,6 +48,7 @@ bridge layer:
 - data and tool permission boundaries,
 - portable workflows,
 - local or private model options,
+- supply-chain and agent-security controls,
 - procurement clauses that preserve public value,
 - and independent capacity inside the adopting institution.
 
@@ -56,6 +57,12 @@ agency should be treated as the preferred direction wherever it is capable
 enough for the work. Frontier models can still be used for escalation, but they
 should not become the default owner of institutional memory, workflow, or
 decision capacity.
+
+Security is part of that agency claim. Supply-chain compromise, prompt
+injection, excessive agent permissions, data exfiltration, model or retrieval
+poisoning, and loss-of-control failure modes are not separate from the economic
+argument. They are hazards that determine whether institutional AI becomes
+public capacity or a brittle dependency.
 
 ## Publication Posture
 

@@ -37,6 +37,12 @@ organizations to keep routine AI work close to their own data, staff, devices,
 and governance rules. Frontier models still matter. They should be treated as
 escalation resources, not the default owners of institutional agency.
 
+Security now sits inside the same argument. Supply-chain attacks, prompt
+injection, poisoned data, over-permissioned agents, data exfiltration, and
+loss-of-control failures are hazards of the AI utility layer. A system that is
+cheap and capable but cannot be audited, constrained, recovered, or exited does
+not preserve agency.
+
 ## 1. What Volume 1 Established
 
 Volume 1 started from a structural failure in modern political economy: the
@@ -105,6 +111,19 @@ combines agents, MCP server access, workflows, checkpointing, telemetry, and
 human review into a production agent framework. Ollama and llama.cpp show that
 tool-calling and OpenAI-compatible local inference are no longer limited to
 hosted frontier APIs.
+
+Security guidance has also moved from abstract model safety into system
+security. NIST's AI Risk Management Framework and Generative AI Profile frame
+AI risk as an organizational governance, measurement, and management problem.
+OWASP's LLM Top 10 names prompt injection, sensitive information disclosure,
+supply-chain vulnerabilities, data and model poisoning, improper output
+handling, and excessive agency as application risks. MITRE ATLAS tracks
+adversary tactics against AI-enabled systems. CISA and partner agencies have
+published AI cybersecurity collaboration, secure AI development, secure
+deployment, and AI data-security guidance. The security field is therefore
+confirming the same shift: AI is not just content generation. It is software
+supply chain, identity, data, tools, permissions, incident response, and
+operational resilience.
 
 This is the harness plateau becoming visible. The key question is no longer
 "can a model answer a prompt?" The question is: who owns the harness around the
@@ -308,7 +327,80 @@ supports Pillar C because productivity gains can be retained inside public or
 mission-driven institutions rather than flowing entirely into external AI
 platforms.
 
-## 7. First-Party Validation: Agency, NanoClaw, And OpenClaw
+## 7. Security And Resilience: The Institutional Attack Surface
+
+Volume 2 must treat security as part of institutional agency. The same features
+that make AI useful inside organizations also create new hazards. An agent that
+can read documents, call tools, write files, send messages, update records, or
+coordinate workflows has crossed from advice into operational power.
+
+The phrase "AI takeover" should be handled carefully. In institutional
+practice, the near-term takeover risk is not a science-fiction event where a
+model suddenly becomes a sovereign actor. It is loss of control through
+ordinary system design: too much access, too many tools, weak approval paths,
+unclear ownership, hidden dependencies, weak logs, and no reliable way to stop
+or unwind agent activity. An over-permissioned AI system does not need
+conscious intent to cause takeover-like outcomes. It can delete, leak, approve,
+route, purchase, publish, or escalate because the surrounding institution gave
+it those powers.
+
+Security hazards now sit across the full AI supply chain:
+
+- **model and dependency compromise:** tampered model files, libraries,
+  containers, connectors, plugins, or MCP servers can become trusted execution
+  paths;
+- **data and retrieval poisoning:** malicious or low-integrity documents can
+  corrupt training, fine-tuning, embeddings, retrieval, memory, or decision
+  context;
+- **prompt injection and indirect prompt injection:** untrusted emails, web
+  pages, PDFs, tickets, transcripts, or records can smuggle instructions into
+  an agent's context;
+- **sensitive information disclosure:** prompts, logs, embeddings, outputs,
+  tool responses, and memory stores can expose protected data;
+- **excessive agency:** an AI system can receive broader permissions, tools, or
+  autonomy than the task requires;
+- **improper output handling:** generated text or code can flow into downstream
+  systems without validation;
+- **incident opacity:** organizations may not be able to reconstruct what the
+  agent saw, decided, called, wrote, or changed;
+- **vendor and infrastructure concentration:** dependency on one hosted model,
+  identity layer, workflow store, or logging plane can make recovery and exit
+  difficult.
+
+This security layer strengthens the private SLM agency direction, but it also
+disciplines it. Local does not automatically mean safe. Open source does not
+automatically mean verified. Private deployment does not remove the need for
+model provenance, dependency review, sandboxing, monitoring, access controls,
+human approval, and incident response. The advantage of private SLM agency is
+that institutions can make these controls visible and enforceable instead of
+accepting a black-box service boundary.
+
+The minimum security posture for institutional AI should include:
+
+- a named owner for each model, agent, connector, and workflow;
+- signed or provenance-tracked model and dependency artifacts where feasible;
+- reviewed MCP servers, plugins, tools, and data connectors;
+- least-privilege access for every agent identity;
+- separation between untrusted content and privileged instructions wherever the
+  architecture allows it;
+- sandboxed execution for code, shell, browser, and file operations;
+- human approval for money movement, public posting, deletion, legal decisions,
+  employment decisions, resident/client impact, and high-risk system changes;
+- logging of prompts, retrieved sources, tool calls, model/provider routing,
+  approvals, artifacts, and failures;
+- red-team or adversarial testing for prompt injection, data leakage, and
+  over-permissioned actions;
+- an incident plan that can revoke tokens, disable tools, freeze workflows,
+  preserve evidence, notify affected parties, and restore trusted state.
+
+This is where "security" connects back to the DSGM pillars. Pillar A requires
+an accountable entity or steward because agents need owners. Pillar B requires
+visible value capture because hidden infrastructure and opaque routing can hide
+both cost and risk. Pillar C requires public-benefit infrastructure because
+unsafe AI deployments can impose public costs even when private vendors capture
+the upside.
+
+## 8. First-Party Validation: Agency, NanoClaw, And OpenClaw
 
 The companion `agency` repository is first-party validation of the harness
 plateau identified after Volume 1. It is not cited as proof of global market
@@ -332,7 +424,7 @@ durable frontier is the harness around the model:
 Those are the practical components an institution needs before accepting AI as
 operating infrastructure.
 
-## 8. Institutional Decision Rule
+## 9. Institutional Decision Rule
 
 The Volume 2 decision rule is simple:
 
@@ -346,6 +438,7 @@ An AI adoption path increases institutional agency when it:
 - documents how agent work is performed,
 - keeps routine work portable,
 - exposes cost and model routing,
+- proves security controls, tool boundaries, and incident response,
 - supports local or private model operation where feasible,
 - and converts productivity gains into public or mission benefit.
 
@@ -355,11 +448,12 @@ An AI adoption path reduces institutional agency when it:
 - stores institutional memory in non-portable systems,
 - hides model routing and cost exposure,
 - uses broad data permissions,
+- grants tools or autonomy without least-privilege controls,
 - replaces staff competence with dependency,
 - or treats public-sector and nonprofit adoption primarily as a market-entry
   channel.
 
-## 9. What Institutions Should Do Now
+## 10. What Institutions Should Do Now
 
 The practical response is not to pause all AI adoption. It is to adopt from a
 position of institutional strength.
@@ -392,12 +486,17 @@ memory, data, workflows, or evaluation records into one vendor. Require export,
 auditability, model-routing transparency, deletion rights, and clear renewal
 pricing before the pilot begins.
 
+**6. Treat AI as a security boundary.** Require supply-chain review, agent
+identity controls, least-privilege tools, sandboxing, prompt-injection testing,
+security logs, and an incident response plan before connecting AI to sensitive
+systems.
+
 These actions convert the Volume 1 pillars into institutional practice. Pillar
 A becomes accountable service ownership. Pillar B becomes procurement-level
 value capture and routing discipline. Pillar C becomes reinvestment of AI
 productivity into durable public or mission capacity.
 
-## 10. Post-Publication Research Agenda
+## 11. Post-Publication Research Agenda
 
 The following questions should shape the next research pass after this public
 draft is reviewed:
@@ -414,6 +513,10 @@ draft is reviewed:
   experimentation?
 - What threshold should move an institutional agent from ordinary software
   governance into AH-style legal-economic accountability?
+- What security controls should be mandatory before an AI agent can access
+  records, communications, payments, public websites, or production systems?
+- How should supply-chain provenance be verified for models, datasets,
+  connectors, plugins, MCP servers, and local SLM deployments?
 
 ## Conclusion
 
@@ -422,9 +525,10 @@ dominant producer of value. Volume 2 argues that the redesign has to begin
 inside institutions now.
 
 The AI utility layer is forming through grants, fellowships, government
-products, enterprise copilots, agent frameworks, model APIs, and local inference
-tools. This supports the DSGM thesis: AI is becoming a productive actor that
-must be governed, taxed, and reinvested into public benefit.
+products, enterprise copilots, agent frameworks, model APIs, local inference
+tools, and security-sensitive supply chains. This supports the DSGM thesis: AI
+is becoming a productive actor that must be governed, secured, taxed, and
+reinvested into public benefit.
 
 The steering choice is whether institutions become tenants inside someone
 else's intelligence infrastructure or owners of their own agency. Open-source,
